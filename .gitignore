@@ -1,35 +1,62 @@
-# Gradle files
-.gradle/
-build/
-.kotlin/
+# HakiHyperOS - Android ROM Development
 
-# Local configuration file (sdk path, etc)
+# Android build output
+/out/
+/build/
+/dist/
+*.img
+*.img.lz4
+*.target_files.zip
+*.ota.zip
+
+# Android build tools
+.repo/
+.cache/
+soong_ui/
+bazel-*
+*.ninja_log
+*.ninja_deps
+
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# Gradle
+.gradle/
+.gradle-cache/
 local.properties
 
-# Log/OS Files
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Operating systems
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
 *.log
+*.tmp
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Local configuration and secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# Local device configuration
+device-local.mk
+vendor-local.mk
 
-# Keystore files
-*.jks
-*.keystore
-
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Downloaded proprietary files
+firmware-downloads/
+private-blobs/
+proprietary/
